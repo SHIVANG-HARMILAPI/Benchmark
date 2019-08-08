@@ -1,0 +1,3 @@
+// Validating benchmarks:
+Benchmarked method `RunningCodeUsingForLoop` is static. Benchmarks MUST be instance methods, static methods are not supported.
+Benchmarked method `RunningCodeUsingForEachLoop` is static. Benchmarks MUST be instance methods, static methods are not supported.

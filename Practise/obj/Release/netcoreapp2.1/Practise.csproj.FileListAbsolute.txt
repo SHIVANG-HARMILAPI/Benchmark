@@ -1,0 +1,11 @@
+C:\Users\shharmilapi\source\repos\Practise\Practise\bin\Release\netcoreapp2.1\Practise.deps.json
+C:\Users\shharmilapi\source\repos\Practise\Practise\bin\Release\netcoreapp2.1\Practise.runtimeconfig.json
+C:\Users\shharmilapi\source\repos\Practise\Practise\bin\Release\netcoreapp2.1\Practise.runtimeconfig.dev.json
+C:\Users\shharmilapi\source\repos\Practise\Practise\bin\Release\netcoreapp2.1\Practise.dll
+C:\Users\shharmilapi\source\repos\Practise\Practise\bin\Release\netcoreapp2.1\Practise.pdb
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.csproj.CoreCompileInputs.cache
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.AssemblyInfoInputs.cache
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.AssemblyInfo.cs
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.dll
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.pdb
+C:\Users\shharmilapi\source\repos\Practise\Practise\obj\Release\netcoreapp2.1\Practise.csprojAssemblyReference.cache

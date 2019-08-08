@@ -1,0 +1,3 @@
+// Validating benchmarks:
+Only 1 benchmark method in a group can have "Baseline = true" applied to it, group Clr(Runtime=Clr) in class Program has 2
+Only 1 benchmark method in a group can have "Baseline = true" applied to it, group Core(Runtime=Core) in class Program has 2
