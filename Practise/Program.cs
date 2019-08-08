@@ -25,33 +25,20 @@ namespace Practise
              var summary = BenchmarkRunner.Run<Program>();
         }
 
-
-         [Benchmark]
-        public void RunningCodeUsingForLoop()
+        [Benchmark]
+        public void UsingString()
         {
-            List<int> l = new List<int>();
-            int a = 0;
-            for (int i = 0; i < 100000; i++)
-                l.Add(i);
-
-            for (int i = 0; i < 100000; i++)
-                a = l[i];
-
-
+            String s = new String("SHIVANG HARMILAPI");
+            for (int i = 0; i < 10; i++)
+                s += i.ToString();
         }
          [Benchmark]
-        public void RunningCodeUsingForEachLoop()
+        public void UsingStringBuilder()
         {
-            List<int> l = new List<int>();
-            int a = 0;
-            for (int i = 0; i < 100000; i++)
-                l.Add(i);
-
-            foreach (int i in l)
-                a = i;
+            StringBuilder sb = new StringBuilder("SHIVANG HARMILAPI");
+            for (int i = 0; i < 10; i++)
+                sb.Append(i.ToString());
         }
-
-
 
 
 
