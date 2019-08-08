@@ -24,56 +24,32 @@ namespace Practise
         {
              var summary = BenchmarkRunner.Run<Program>();
         }
-           [Benchmark]
-        public void UsingIfCase()
+         [Benchmark]
+        public void UsingForLoop()
         {
-            string day = "Saturday";
-            if (day == "Monday")
-                Console.WriteLine(1);
-            else if (day == "Tuesday")
-                Console.WriteLine(2);
-            else if (day == "Wednesday")
-                Console.WriteLine(2);
-            else if (day == "Thursday")
-                Console.WriteLine(2);
-            else if (day == "Friday")
-                Console.WriteLine(2);
-            else if (day == "Saturday")
-                Console.WriteLine(2);
+            List<int> list = new List<int>();
+            for (int i = 0; i < 100000; i++)
+                list.Add(i);
 
         }
-          [Benchmark]
-        public void UsingSwitchCase()
+         [Benchmark]
+        public void UsingWhileLoop()
         {
-            String day = "Saturday";
-            switch (day)
+            List<int> list = new List<int>();
+            int i = 0;
+            while (i < 100000)
             {
-                case "Monday":
-                    Console.WriteLine(1);
-                    break;
-                case "Tuesday":
-                    Console.WriteLine(2);
-                    break;
-                case "Wednesday":
-                    Console.WriteLine(3);
-                    break;
-                case "Thursday":
-                    Console.WriteLine(4);
-                    break;
-                case "Friday":
-                    Console.WriteLine(5);
-                    break;
-                case "Saturday":
-                    Console.WriteLine(6);
-                    break;
-
+                list.Add(i);
+                i++;
             }
-
-
         }
+
 
 
     }
+
+
+}
 
 }
 
