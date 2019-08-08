@@ -26,26 +26,33 @@ namespace Practise
         }
 
 
-        [Benchmark]
-        public void UsingThread()
+         [Benchmark]
+        public void RunningCodeUsingForLoop()
         {
-            int sum = 0;
-            Thread t = new Thread(() => {
-                for (int i = 0; i < 10000; i++)
-                    sum += i;
-            });
-            t.Start();
-        }
-        [Benchmark]
-        public void UsingTask()
-        {
-            int sum = 0;
-            Task t = new Task(()=> {
-                for (int i = 0; i < 10000; i++)
-                    sum += i;
-            });
+            List<int> l = new List<int>();
+            int a = 0;
+            for (int i = 0; i < 100000; i++)
+                l.Add(i);
+
+            for (int i = 0; i < 100000; i++)
+                a = l[i];
+
 
         }
+         [Benchmark]
+        public void RunningCodeUsingForEachLoop()
+        {
+            List<int> l = new List<int>();
+            int a = 0;
+            for (int i = 0; i < 100000; i++)
+                l.Add(i);
+
+            foreach (int i in l)
+                a = i;
+        }
+
+
+
 
 
     }
