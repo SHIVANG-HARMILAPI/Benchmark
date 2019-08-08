@@ -24,22 +24,53 @@ namespace Practise
         {
              var summary = BenchmarkRunner.Run<Program>();
         }
-
-        [Benchmark]
-        public void UsingString()
+           [Benchmark]
+        public void UsingIfCase()
         {
-            String s = new String("SHIVANG HARMILAPI");
-            for (int i = 0; i < 10; i++)
-                s += i.ToString();
-        }
-         [Benchmark]
-        public void UsingStringBuilder()
-        {
-            StringBuilder sb = new StringBuilder("SHIVANG HARMILAPI");
-            for (int i = 0; i < 10; i++)
-                sb.Append(i.ToString());
-        }
+            string day = "Saturday";
+            if (day == "Monday")
+                Console.WriteLine(1);
+            else if (day == "Tuesday")
+                Console.WriteLine(2);
+            else if (day == "Wednesday")
+                Console.WriteLine(2);
+            else if (day == "Thursday")
+                Console.WriteLine(2);
+            else if (day == "Friday")
+                Console.WriteLine(2);
+            else if (day == "Saturday")
+                Console.WriteLine(2);
 
+        }
+          [Benchmark]
+        public void UsingSwitchCase()
+        {
+            String day = "Saturday";
+            switch (day)
+            {
+                case "Monday":
+                    Console.WriteLine(1);
+                    break;
+                case "Tuesday":
+                    Console.WriteLine(2);
+                    break;
+                case "Wednesday":
+                    Console.WriteLine(3);
+                    break;
+                case "Thursday":
+                    Console.WriteLine(4);
+                    break;
+                case "Friday":
+                    Console.WriteLine(5);
+                    break;
+                case "Saturday":
+                    Console.WriteLine(6);
+                    break;
+
+            }
+
+
+        }
 
 
     }
